@@ -2,7 +2,7 @@
 
 ## Database Schema Design
 
-`<insert database schema design here>`
+![database schema](database-schema/database-schema.png)
 
 ## API Documentation
 
@@ -1971,8 +1971,8 @@ Return events filtered by query parameters.
 
 * Require Authentication: false
 * Request
-  * Method: ?
-  * URL: ?
+  * Method: `GET`
+  * URL: `/events/search?page={pageNumber}&size={pageLimit}&name={eventName}&type={eventType}&startDate={eventStartDate}`
   * Query Parameters
     * page: integer, minimum: 1, maximum: 10, default: 1
     * size: integer, minimum: 1, maximum: 20, default: 20
